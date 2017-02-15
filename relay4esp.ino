@@ -127,8 +127,6 @@ void relaystatus60() {
 			client.publish(relStat.c_str(), "0");
 		}
 		tellstate = millis();
-		//  client.publish("caldaia3/uptime", (char*)(millis()));
-		//   Serial.println(millis());
 	}
 }
 
