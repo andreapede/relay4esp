@@ -8,9 +8,10 @@ The AP mode is disabled for security reason, so if you want to change something 
 
 Anyway I would like to implement the possibility to change some of the parameters using some mqtt command. 
 
-The first block contains the wifi configuration  and the access data to the mosquitto server
 
 #Parameters
+The first block contains the wifi configuration  and the access data to the mosquitto server
+
 
 const char* ssid = "your_wifi";
 
