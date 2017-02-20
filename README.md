@@ -10,11 +10,18 @@ Anyway I would like to implement the possibility to change some of the parameter
 
 The first block contains the wifi configuration  and the access data to the mosquitto server
 
-# const char* ssid = "your_wifi";
-# const char* wifiPass = "your_wifipasswoed";
-# const char* mqttServer = "your_mqttserver";
-# const char* mqttUser = "your_mqttuser";
-# const char* mqttPass = "your_mqttpassword";
-# const int mqttPort = 1883;
+#Parameters
+
+const char* ssid = "your_wifi";
+
+const char* wifiPass = "your_wifipasswoed";
+
+const char* mqttServer = "your_mqttserver";
+
+const char* mqttUser = "your_mqttuser";
+
+const char* mqttPass = "your_mqttpassword";
+
+const int mqttPort = 1883;
 
 
