@@ -25,4 +25,19 @@ const char* mqttPass = "your_mqttpassword";
 
 const int mqttPort = 1883;
 
+#Mosquitto messages
+
+The name of the device for subscription is defined here
+
+String mqttDevice = "nameofdevice";
+
+The messages topics are:
+
+nameofdevice/connectionStatus  that will publish a paylod "connected!" when the ESP8266 connects succesfully at the wifi network
+
+nameofdevice/relayCommand that will accept as paylod  0, 1 and 2 (invert the actual state)
+
+nameofdevice/realyStatus that will publish a payload 0, 1 
+
+
 
