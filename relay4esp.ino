@@ -91,6 +91,13 @@ void callback(char* topic, byte* payload, unsigned int length) {
 		relayStatus = LOW;
 		EEPROM.write(0, relayStatus);    // Write state to EEPROM
 		EEPROM.commit();
+	} else if ((char) payload[0] == '2') {  //Inverted state
+		relayStatus = !relayStatus; //Inverte lo stato
+		digitalWrite(relayPin, relayStatus);
+		Serial.print("relayPin -> switched to ");
+		Serial.println(relayStatus);
+		EEPROM.write(0, relayStatus); // Write state to EEPROM
+		EEPROM.commit();
 	}
 	Serial.println();
 	relaystatus();
